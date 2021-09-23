@@ -16,16 +16,25 @@ body{
     clear: both;
 }
 
-div.container{
-    
+div.container{    
     margin: 0 auto;
     background-color: azure;
+    width: 88%;
 }
 
 .btn{
     background-color: #0061ff;
     color: white;
     padding: 13px 26px; 
+    text-decoration: none;
+}
+
+h2.title{
+
+}
+
+h3.subtitle{
+
 }
 
 /************ HEADER **************/
@@ -34,18 +43,18 @@ header{
     min-width: 800px;
 }
 
+header .container{
+    width: 100%;
+}
+
 header .container ul{
-    list-style: none;
-    
+    list-style: none;    
 }
 
 header .container .logo a{
     line-height: 100px;
     float: left;
-}
-
-header .container ul.right, .start{
-    
+    margin-left: 25px;
 }
 
 header .container ul li {
@@ -69,14 +78,16 @@ header .container ul.right li{
 
 header .container ul li a{
     color: black;    
-    text-decoration: none;
-    line-height: 100px;    
+    text-decoration: none;    
+    line-height: 100px;  
+    padding: 39px 0;  
 }
 
 .container .start{
     display: inline-block;
     float: right;
     line-height: 100px;
+    margin-right: 25px;
 }
 
 
@@ -85,9 +96,50 @@ header .container ul li a{
 /* jumbotron */
 
 section.jumbotron{
-    background-color: cornflowerblue;
-    height: 800px;
+    background-color: #b4d0e7;
+    height: 930px;
 }
+
+#slogan{
+    font-size: 90px;
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
+
+.jumbotron .side-piece{
+    width: 28%;
+}
+
+.side-piece .start{
+    float: none;
+}
+
+.side-piece span{
+    display: block;
+    margin-top: -15px;
+    
+}
+
+.side-piece .arrow{
+    margin: 0 10px;
+    line-height: 100px;
+}
+
+.side-piece .arrow i{
+    transform: scale(2);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* price-range */
 
 section.price-range{
