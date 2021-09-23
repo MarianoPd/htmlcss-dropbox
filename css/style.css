@@ -18,7 +18,6 @@ body{
 
 div.container{    
     margin: 0 auto;
-    background-color: azure;
     width: 88%;
 }
 
@@ -97,17 +96,18 @@ header .container ul li a{
 
 section.jumbotron{
     background-color: #b4d0e7;
-    height: 930px;
+    
 }
 
 #slogan{
-    font-size: 90px;
+    font-size: 100px;
     padding-top: 130px;
     padding-bottom: 60px;
 }
 
 .jumbotron .side-piece{
     width: 28%;
+    display: inline-block;
 }
 
 .side-piece .start{
@@ -116,8 +116,7 @@ section.jumbotron{
 
 .side-piece span{
     display: block;
-    margin-top: -15px;
-    
+    margin-top: -15px;    
 }
 
 .side-piece .arrow{
@@ -128,6 +127,13 @@ section.jumbotron{
 .side-piece .arrow i{
     transform: scale(2);
     color: black;
+}
+
+.jumbotron img{
+   width: 60%;
+   display: inline-block; 
+   vertical-align: top;
+   margin-left: 11%;
 }
 
 
@@ -146,6 +152,11 @@ section.price-range{
     background-color: darkgray;
     height: 2000px;
 }
+
+.rice-range .container{
+    background-color: khaki;
+}
+
 /* partner-finder */
 section.partner-finder{
     background-color: darksalmon;
