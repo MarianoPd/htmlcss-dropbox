@@ -1,0 +1,103 @@
+/* GENERIC SETTINGS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+/************ HEADER **************/
+header{
+    height: 80px;
+}
+
+header .container ul{
+    list-style: none;
+}
+
+header .container ul.left, header .container .logo{
+    float: left;
+}
+
+header .container .logo img{
+    vertical-align: middle;
+}
+
+header .container ul.right{
+    float: right;
+}
+
+header .container ul li {
+    display: inline;
+    line-height: 80px;
+    margin: 0 5%;
+}
+
+header .container ul li a{
+    color: black;
+    height: 100%;
+    text-decoration: none;
+    
+}
+
+/************ MAIN **************/
+
+/* jumbotron */
+
+section.jumbotron{
+    background-color: cornflowerblue;
+    height: 800px;
+}
+/* price-range */
+
+section.price-range{
+    background-color: darkgray;
+    height: 2000px;
+}
+/* partner-finder */
+section.partner-finder{
+    background-color: darksalmon;
+    height: 800px;
+}
+/* informatives */
+
+section.informatives{
+    background-color: deeppink;
+    height: 2000px;
+}
+/* partners */
+
+section.partners{
+    background-color: firebrick;
+    height: 1200px;
+}
+/* faq */
+
+section.faq{
+    background-color: green;
+    height: 600px;
+}
+/************ FOOTER **************/
+footer{
+    height: 500px;
+    background-color: indianred;
+}
+
+
+
