@@ -8,6 +8,11 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+section{
+    padding-top: 130px;
 }
 
 .clearfix::after{
@@ -18,7 +23,7 @@ body{
 
 div.container{    
     margin: 0 auto;
-    width: 88%;
+    width: 85%;
 }
 
 .btn{
@@ -92,16 +97,15 @@ header .container ul li a{
 
 /************ MAIN **************/
 
-/* jumbotron */
+/* JUMBOTRON */
 
 section.jumbotron{
-    background-color: #b4d0e7;
-    
+    background-color: #b4d0e7; 
+    height: 1200px;   
 }
 
 #slogan{
-    font-size: 100px;
-    padding-top: 130px;
+    font-size: 120px;    
     padding-bottom: 60px;
 }
 
@@ -130,23 +134,13 @@ section.jumbotron{
 }
 
 .jumbotron img{
-   width: 60%;
+   width: 65%;
    display: inline-block; 
    vertical-align: top;
-   margin-left: 11%;
+   float: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* price-range */
+/* PRICE_RANGE */
 
 section.price-range{
     background-color: darkgray;
@@ -156,6 +150,18 @@ section.price-range{
 .rice-range .container{
     background-color: khaki;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* partner-finder */
 section.partner-finder{
