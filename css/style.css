@@ -17,44 +17,68 @@ body{
 }
 
 div.container{
-    max-width: 1500px;
+    
     margin: 0 auto;
     background-color: azure;
 }
 
+.btn{
+    background-color: #0061ff;
+    color: white;
+    padding: 13px 26px; 
+}
+
 /************ HEADER **************/
 header{
-    height: 80px;
+    height: 100px;
+    min-width: 800px;
 }
 
 header .container ul{
     list-style: none;
+    
 }
 
-header .container ul.left, header .container .logo{
+header .container .logo a{
+    line-height: 100px;
     float: left;
 }
 
-header .container .logo img{
-    vertical-align: middle;
-}
-
-header .container ul.right{
-    float: right;
+header .container ul.right, .start{
+    
 }
 
 header .container ul li {
     display: inline;
-    line-height: 80px;
-    margin: 0 5%;
+    height: 100px;
+}
+
+header .container ul li:hover{
+    border-bottom: 3px solid black;
+}
+
+header .container ul.left li{
+    margin-left: 55px;
+    float: left;
+}
+
+header .container ul.right li{
+    margin-right: 55px;
+    float: right;
 }
 
 header .container ul li a{
-    color: black;
-    height: 100%;
+    color: black;    
     text-decoration: none;
-    
+    line-height: 100px;    
 }
+
+.container .start{
+    display: inline-block;
+    float: right;
+    line-height: 100px;
+}
+
 
 /************ MAIN **************/
 
