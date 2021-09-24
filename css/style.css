@@ -282,11 +282,6 @@ p.buy a.now{
 
 
 /* PARTNER-FINDER */
-section.partner-finder{    
-    background-color: darksalmon;
-    height: 800px;
-}
-
 .partner-image{
     width: 55%;
     float: left;
@@ -308,11 +303,6 @@ section.partner-finder{
 
 /* FEATURES */
 
-section.features{
-    background-color: deeppink;
-    height: 2000px;
-}
-
 .features .row{
     margin-bottom: 100px;
 }
@@ -329,24 +319,74 @@ section.features{
     margin-bottom: 20px;
 }
 
+/* TEAMS */
 
-
-
-
-
-
-
-
-
-
-
-
-/* partners */
-
-section.partners{
+section.teams{
     background-color: firebrick;
     height: 1200px;
 }
+
+.teams-headline{
+    width: 55%;
+}
+
+.teams-headline h2{
+    margin-bottom: 0;
+}
+
+.teams-headline a{
+    color: #0061ff;
+    line-height: 100px;
+}
+
+.teams-container, .teams-center{
+    float: left;
+}
+
+.teams-container{
+    width: 32%;
+}
+
+.teams-center{
+    background-color: white;
+    height: 100%;
+    width: 36%;
+}
+
+.teams-logo{
+    position: relative;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    float: left;
+}
+
+.teams-logo svg{
+    width: 60%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* faq */
 
 section.faq{
