@@ -249,7 +249,7 @@ section.price-range{
 .price-plan ul li div{
     display: inline-block;
     padding-right: 5px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     float: left;
 }
 
