@@ -34,8 +34,8 @@ div.sub-container{
     background-color: violet;
 }
 
-.start{
-    
+ul{
+    list-style: none;
 }
 
 .btn{    
@@ -72,10 +72,6 @@ header{
 header .container{
     width: 100%;
     margin: 0 auto;
-}
-
-header .container ul{
-    list-style: none;    
 }
 
 header .container .logo a{
@@ -123,13 +119,13 @@ header .container ul li a{
 /* JUMBOTRON */
 
 section.jumbotron{
-    background-color: #b4d0e7; 
-    height: 930px;   
+    background-color: #b4d0e7;  
 }
 
 .jumbotron .container{
     width: 85%;
     margin: 0 auto;
+    position: relative;
 }
 
 #slogan{
@@ -166,6 +162,8 @@ section.jumbotron{
    display: inline-block; 
    vertical-align: top;
    float: right;
+   position: absolute;
+   bottom: -100px;
 }
 
 /* PRICE_RANGE */
@@ -181,6 +179,7 @@ section.price-range{
     vertical-align: middle;
     margin-right: 25px;
     margin-bottom: 55px;
+
 }
 
 .select .fakebox{
@@ -190,6 +189,25 @@ section.price-range{
     background-color: white;
     border-radius: 50%;
     border: 1px solid lightgray;
+    position: relative;
+    vertical-align: middle;
+}
+
+.fakebox > div{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.fakebox:hover{
+    background-color: #0061ff;
 }
 
 .price-plan{
@@ -198,7 +216,7 @@ section.price-range{
 }
 
 .price-plan.user{
-    height: 1330px;
+    min-height: 1330px;
     width: 29.3%;   
     margin-top: 1px;
     float: left;
@@ -217,11 +235,23 @@ section.price-range{
 
 .price-plan ul li{
     list-style: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-ul.highlights li i{
-    color: #0061ff;
+.price-plan ul li div{
+    display: inline-block;
+    float: left;
+    padding-right: 5px;
+}
+
+.price-plan li p{
+    display: inline-block;
+    float: left;
+    width: 90%;
+}
+
+ul.highlights li div{
+    color: #0061ff;    
 }
 
 .price-plan h4{
@@ -357,7 +387,7 @@ section.teams{
     width: 36%;
     height: 0;
     padding-bottom: 32%;
-    overflow-y: scroll;    
+    overflow: auto;    
 }
 
 .teams-center img{
@@ -419,26 +449,75 @@ section.teams{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 /* FAQ */
 
 section.faq{
-    background-color: green;
-    height: 600px;
-    margin-top: 1px;
+    padding-bottom: 200px;
 }
+
+.faq .container_2 div{
+    border-bottom: 1px solid lightgray;
+}
+
+.faq .top h2{
+    margin-bottom: 50px;
+}
+
+.faq .question{
+    line-height: 80px;
+}
+
+.question:hover{
+
+}
+
+.question h4{
+    float: left;    
+}
+
+.question .explain{
+    float: right;
+    width: 3%;
+}
+
 /************ FOOTER **************/
+
 footer{
     height: 500px;
-    background-color: indianred;
+    background-color: black;
+    color: white;
+    padding-top: 150px;
 }
 
 
+footer .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .column{
+    display: inline-block;
+}
+
+.column ul{
+    padding-top: 20px;
+}
+
+.column ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 40px;    
+}
+
+footer .line{
+    height: 1px;
+    width: 100px;
+    border-bottom: 1px solid lightgray;
+}
+
+footer .lenguage a{
+    color: white;
+    line-height: 100px;
+    font-size: 15px;
+}
 
