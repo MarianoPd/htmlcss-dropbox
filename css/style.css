@@ -43,11 +43,16 @@ ul{
     text-decoration: none;
     line-height: 53px;
     background-color: white;
+    color: black;
 }
 
 .blue{
     background-color: #0061ff;
     color: white;
+}
+
+.blue:hover{
+    background-color: #3b86ff;
 }
 
 .blk-brdr{
@@ -318,7 +323,7 @@ p.buy a.now{
 
 /* pesso così per non toccare i padding verticali di bnt */
 .enterprice a{
-    padding: 50px;
+    padding-left: 50px;
     padding-right: 50px;
 }
 
@@ -420,6 +425,19 @@ p.buy a.now{
     height: 0;
     padding-bottom: 50%;
     float: left;
+}
+
+/* per la centratura avrei potuto creare una classe a parte ma avrei dovuto assegnarla ad ogni elemento nell' html */
+
+.teams-logo .subsquare{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 90%;
 }
 
 .teams-logo svg{
