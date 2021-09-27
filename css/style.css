@@ -580,6 +580,7 @@ footer .line{
 footer .lenguage a{
     color: white;
     line-height: 100px;
-    font-size: 15px;
+    font-size: 12px;
+    text-decoration: none;
 }
 
