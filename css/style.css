@@ -21,17 +21,17 @@ section{
     clear: both;
 }
 
+/* container e sub-container standard per molti elementi */
+
 div.container_2{
     max-width: 1350px;
     margin: 0 auto;
-    background-color: turquoise;
 }
 
 div.sub-container{
     margin: 0 auto;
     width: calc(100% - 80px);
     margin-top: 50px;
-    background-color: violet;
 }
 
 ul{
@@ -193,6 +193,7 @@ section.price-range{
     vertical-align: middle;
 }
 
+/* checkbox fasullo la centratura è fatta con position absolute*/
 .fakebox > div{
     width: 50%;
     height: 50%;
@@ -210,11 +211,13 @@ section.price-range{
     background-color: #0061ff;
 }
 
+/* elemento della sezione price-range */
 .price-plan{
     border: 1px solid lightgray;
     background-color: white;    
 }
 
+/* le tre colonne di price-range */
 .price-plan.user{
     min-height: 1330px;
     width: 29.3%;   
@@ -229,24 +232,30 @@ section.price-range{
 .price-plan .type{
     text-align: center;
     padding: 18px 0;
-    border-bottom:1px solid lightgray;
-    
+    border-bottom:1px solid lightgray;    
 }
 
 .price-plan ul li{
-    list-style: none;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* clearfix applicato ad ogni list item dei price-plan*/
+.price-plan ul li::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .price-plan ul li div{
     display: inline-block;
-    float: left;
     padding-right: 5px;
+    padding-bottom: 30px;
+    float: left;
 }
 
 .price-plan li p{
-    display: inline-block;
     float: left;
+    display: inline-block;
     width: 90%;
 }
 
@@ -272,6 +281,7 @@ ul.highlights li div{
 .price-plan p.buy{
     line-height: 150px;
 }
+
 p.buy span.or{    
     border-bottom: 1px solid #98a1aa;
     display: inline-block;
@@ -306,8 +316,9 @@ p.buy a.now{
     float: left;    
 }
 
+/* pesso così per non toccare i padding verticali di bnt */
 .enterprice a{
-    padding-left: 50px;
+    padding: 50px;
     padding-right: 50px;
 }
 
@@ -352,9 +363,7 @@ p.buy a.now{
 
 /* TEAMS */
 
-section.teams{
-    background-color: firebrick;
-}
+/* parte alta della section teams */
 
 .teams-headline{
     width: 55%;
@@ -369,6 +378,7 @@ section.teams{
     line-height: 100px;
 }
 
+/* parte centrale di teamsil padding del 32% serve per far si che abbiamo tutti la stessa altessa */
 .teams-main{
     width: 100%;
     height: 0;
@@ -423,11 +433,13 @@ section.teams{
     filter: invert(1);
 }
 
+/* parte bassa della sezione teams */
 .teams-footer{
     background-color: #b4d0e7;
     margin-bottom: 1px;
 }
 
+/* divisa in due parti dai separetor */
 .separator{
     width: 50%;
     float: left;
@@ -495,12 +507,14 @@ footer .row{
     justify-content: space-between;
 }
 
+/* flexbox rules */
 .row .column{
     display: inline-block;
 }
 
 .column ul{
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .column ul li a{
